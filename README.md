@@ -6,3 +6,6 @@
 
 # 81 Voxels
 ![image](https://user-images.githubusercontent.com/76835313/165241250-fb44af29-e4aa-43af-98aa-02333c57212c.png)
+
+# 136 voxels
+![image](https://user-images.githubusercontent.com/76835313/165264125-0542bcaf-acc7-4888-9d63-051542b26079.png)
