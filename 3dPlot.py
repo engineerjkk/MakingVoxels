@@ -39,18 +39,15 @@ ax = plt.axes(projection='3d')
 l=[]
 total_count=0
 real_count=0
-interval_X=int((max(X)-min(X))/100)+1
-interval_Y=int((max(Y)-min(Y))/100)+1
-interval_Z=int((max(Z)-min(Z))/100)+1
-for i in tqdm(range(int(min(X)),int(max(X))+1,interval_X)):
-    for j in range(int(min(Y)),int(max(Y))+1,interval_Y):
-        for k in range(int(min(Z)),int(max(Z))+1,interval_Z):
+for i in tqdm(range(385,1304,92)):
+    for j in range(-60,226,29):
+        for k in range(-501,382,89):
             #print(i,j,k)
             x2=[]
             y2=[]
             z2=[]
             for x,y,z in pair:
-                if (x>i)&(x<i+interval_X)&(y>j)&(y<j+interval_Y)&(z>k)&(z<k+interval_Z):
+                if (x>i)&(x<i+92)&(y>j)&(y<j+29)&(z>k)&(z<k+89):
                   x2.append(x)
                   y2.append(y)
                   z2.append(z)
@@ -67,4 +64,6 @@ ax.set_zlim(-501,382)
 ax.set_xlabel('X axis')
 ax.set_ylabel('Y axis')
 ax.set_zlabel('Z axis')
+
+ax.view_init(0, 0)
 plt.show()
