@@ -31,4 +31,11 @@ for i in range(619,1076,46):
                   z2.append(z)
                   
             ax.scatter(x2, y2,z2, c=np.random.rand(3,))
+
+ax.set_xlim(619, 1076)
+ax.set_ylim(-19, 62)
+ax.set_zlim(-400, 187)
+ax.set_xlabel('X axis')
+ax.set_ylabel('Y axis')
+ax.set_zlabel('Z axis')
 plt.show()
